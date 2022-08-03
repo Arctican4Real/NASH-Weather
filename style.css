@@ -1,7 +1,15 @@
+/*Colors*/
+:root{
+    --color-1:#4a788e;
+    --color-2:#23b6b6;
+    --color-3:#90daaa;
+    --color-4:#d3e79d;
+}
+
 /*For debug*/
-/* *{
+*{
     outline: solid greenyellow 2px;
-}     */
+}     
 
 *{
     margin: 0px;
@@ -11,6 +19,13 @@
     text-decoration: none;
     color: black;
     
+}
+
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 img , button, button.div{
@@ -26,6 +41,62 @@ body, html{
     height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
     scroll-behavior: smooth;
+}
+
+button, .navbarLinks a{
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*Navbar*/
+.navbar{
+    width: 100%;
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    height: 50px;
+
+    padding: 10px;
+
+    background:var(--color-1);
+}
+
+.navbarLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    gap: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.navbarLinks ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.navbarLinks a, .navbarLinks button{
+    padding: 15px;
+
+    color: white;
+
+    border-radius: 20px;
 }
