@@ -49,7 +49,7 @@ body, html{
 button, .navbarLinks a{
     padding: 0px;
     margin: 0px;
-    background-color: transparent;
+    /* background-color: transparent; */
     cursor: pointer;
 }
 
@@ -59,7 +59,7 @@ button, .navbarLinks a{
     font-size: 15px;
     font-weight: 500;
     color: white;
-    background-color: var(--color-4);
+    background-color: gray;
     border-radius: 50px;
 }
 
@@ -75,7 +75,7 @@ button, .navbarLinks a{
 
     padding: 10px;
 
-    background:var(--color-3);
+    background-color: grey;
 }
 
 .navbarLogo{
@@ -119,7 +119,7 @@ button, .navbarLinks a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-1);
+    /* background-color: var(--color-1); */
     gap: 30px;
 }
 
@@ -146,7 +146,7 @@ button, .navbarLinks a{
 
 /*Feature section*/
 .features{
-    background: var(--color-2);
+    /* background: var(--color-2); */
 
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@ button, .navbarLinks a{
 
 /*Working on quote section*/
 .quoteContainer{
-    background:var(--color-1);
+    /* background:var(--color-1); */
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -209,7 +209,7 @@ button, .navbarLinks a{
     padding: 30px;
     align-items: center;
     justify-content: center;
-    background:var(--color-2);
+    /* background:var(--color-2); */
 }
 
 .aboutHead{
@@ -248,7 +248,7 @@ button, .navbarLinks a{
 
 /*CTA at end*/
 .ctaMain{
-    background: var(--color-1);
+    /* background: var(--color-1); */
 }
 
 .ctaCont{
@@ -256,7 +256,7 @@ button, .navbarLinks a{
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    background-color: var(--color-3);
+    /* background-color: var(--color-3); */
 }
 .ctaMain #startButton{
     padding: 40px;
@@ -267,7 +267,7 @@ button, .navbarLinks a{
 
 /*Footer*/
 .footer{
-    background-color: var(--color-1);
+    /* background-color: var(--color-1); */
     display: flex;
     padding: 20px;
     flex-direction: column;
