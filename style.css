@@ -1,7 +1,7 @@
 /*Colors*/
 :root{
     --color-1:#3ab4ff;
-    --color-2:#ffeedb;
+    --color-2:#fce0c0;
     --color-3:#ffb92c;
     --color-4:#ff1f40;
 }
@@ -59,7 +59,7 @@ button, .navbarLinks a{
     font-size: 15px;
     font-weight: 500;
     color: white;
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     border-radius: 50px;
 }
 
@@ -75,7 +75,7 @@ button, .navbarLinks a{
 
     padding: 10px;
 
-    background:var(--color-2);
+    background:var(--color-3);
 }
 
 .navbarLogo{
@@ -142,4 +142,61 @@ button, .navbarLinks a{
     font-size: 22px;
     line-height: 30px;
     font-style: italic;
+}
+
+/*Feature section*/
+.features{
+    background: var(--color-2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.featureHead{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.featureCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 60%;
+    gap: 20px;
+    padding: 10px;
+}
+
+.featureCard.reverse{
+    flex-direction: row-reverse;
+}
+
+.featureCardPic{
+    width: 200px;
+    height: 200px;
+}
+
+/*Working on quote section*/
+.quoteContainer{
+    background:var(--color-1);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+}
+
+.quote{
+    font-size: 50px;
+    font-style: italic;
+}
+
+.quoteAuth{
+    align-self: flex-end;
+    margin-top: 20px;    
 }
