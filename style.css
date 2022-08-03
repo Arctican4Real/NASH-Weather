@@ -112,9 +112,13 @@ button, .navbarLinks a{
     border-radius: 20px;
 }
 
+.underNav{
+    padding-top: 60px !important;
+}
+
 /*Hero*/
 .hero{
-    padding:60px;
+    padding: 60px;
 
     display: flex;
     align-items: center;
