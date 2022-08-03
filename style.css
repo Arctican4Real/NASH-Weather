@@ -7,9 +7,9 @@
 }
 
 /*For debug*/
-*{
+/* *{
     outline: solid greenyellow 2px;
-}     
+}      */
 
 *{
     margin: 0px;
@@ -53,6 +53,16 @@ button, .navbarLinks a{
     cursor: pointer;
 }
 
+/*Special Button*/
+#startButton{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-3);
+    border-radius: 50px;
+}
+
 /*Navbar*/
 .navbar{
     width: 100%;
@@ -65,13 +75,14 @@ button, .navbarLinks a{
 
     padding: 10px;
 
-    background:var(--color-1);
+    background:var(--color-2);
 }
 
 .navbarLogo{
     display: flex;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
 
     font-size: 20px;
 
@@ -93,10 +104,42 @@ button, .navbarLinks a{
     gap: 10px;
 }
 
-.navbarLinks a, .navbarLinks button{
+.navbarLinks a{
     padding: 15px;
 
     color: white;
 
     border-radius: 20px;
+}
+
+/*Hero*/
+.hero{
+    padding:60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-1);
+    gap: 30px;
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.heroTextSlogan{
+    font-size: 42px;
+    font-weight: bold;
+
+    color: white;
+}
+
+.heroTextExtra{
+    font-size: 22px;
+    line-height: 30px;
+    font-style: italic;
 }
