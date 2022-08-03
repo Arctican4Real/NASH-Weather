@@ -1,7 +1,7 @@
 /*Colors*/
 :root{
     --color-1:#3ab4ff;
-    --color-2:#fce0c0;
+    --color-2:#FFEEDB;
     --color-3:#ffb92c;
     --color-4:#ff1f40;
 }
@@ -9,7 +9,7 @@
 /*For debug*/
 /* *{
     outline: solid greenyellow 2px;
-}      */
+}       */
 
 *{
     margin: 0px;
@@ -199,4 +199,89 @@ button, .navbarLinks a{
 .quoteAuth{
     align-self: flex-end;
     margin-top: 20px;    
+}
+
+/*About section*/
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background:var(--color-2);
+}
+
+.aboutHead{
+    font-size: 32px;
+    font-weight: 900;   
+}
+
+.aboutCardCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.aboutCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    gap: 10px;
+}
+
+.aboutImg{
+    height: 200px;
+    width: 200px;
+}
+
+.aboutJob{
+    font-weight: 900;
+}
+
+.aboutText{
+    padding: 5px;
+}
+
+/*CTA at end*/
+.ctaMain{
+    background: var(--color-1);
+}
+
+.ctaCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--color-3);
+}
+.ctaMain #startButton{
+    padding: 40px;
+}
+.ctaText{
+    width: 50%;
+}
+
+/*Footer*/
+.footer{
+    background-color: var(--color-1);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerCopy{
+    font-style: italic;
+    font-size: 20px;
+}
+
+.footerA{
+    margin: 0px 20px;
+    color: blue;
 }
