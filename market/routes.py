@@ -10,3 +10,7 @@ def about_team():
 @app.route('/index')
 def index():
     return render_template('index.html')
+
+@app.route('/login')
+def login_Page():
+    return render_template('loginPage.html')
