@@ -62,8 +62,9 @@ button, .navbarLinks a{
 #startButton{
     padding: 10px;
     font-size: 15px;
-    -weight: 500;
     border-radius: 50px;
+    color: black;
+    border: 2px black solid;
 }
 
 /*Navbar*/
@@ -74,9 +75,11 @@ button, .navbarLinks a{
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    height: 50px;
+    height: 70px;
 
     padding: 10px;
+
+    background-color: black;
 
 }
 
@@ -91,6 +94,10 @@ button, .navbarLinks a{
 
 .logoText{
     font-size: 36px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+
+
 }
 
 .logo{
@@ -104,6 +111,7 @@ button, .navbarLinks a{
     width: 50px;
     height: 50px;
     padding: 5px;
+
 }
 
 
@@ -118,7 +126,16 @@ button, .navbarLinks a{
 .navbarLinks a,
 .navbarLinks #startButton{
     padding: 5px 10px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
 
+
+}
+
+.navbarLinks #startButton{
+    border: 2px white solid;
+    border-radius: 10px;
 }
 
 .navbarLinks a{
@@ -127,7 +144,7 @@ button, .navbarLinks a{
 }
 
 .underNav{
-    padding-top: 60px !important;
+    padding-top: 80px !important;
 }
 
 /*Hero*/
@@ -142,6 +159,12 @@ button, .navbarLinks a{
 
 }
 
+.heroImg img{
+    box-shadow: 15px 17px 23px -7px rgba(0,0,0,0.81);
+    -webkit-box-shadow: 15px 17px 23px -7px rgba(0,0,0,0.81);
+    -moz-box-shadow: 15px 17px 23px -7px rgba(0,0,0,0.81);
+}
+
 .heroText{
     display: flex;
     flex-direction: column;
@@ -152,15 +175,17 @@ button, .navbarLinks a{
 
 .heroTextSlogan{
     font-size: 42px;
-    -weight: bold;
+    text-align: left;
+    font-family: 'Proza Libre', sans-serif;
 
 }
 
 .heroTextExtra{
     font-size: 22px;
     line-height: 30px;
-    -style: italic;
-    margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 /*Feature section*/
@@ -173,23 +198,30 @@ button, .navbarLinks a{
     gap: 20px;
 
     padding: 20px;
+    
 }
 
 .featureHead{
     font-size: 32px;
-    -weight: 900;
-
+    font-family: 'Proza Libre', sans-serif;
+    text-align: left;
+    text-decoration: underline;
 }
 
 .featureCardText{
-    -weight: bold;
     font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 .featureCard{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    margin-left: 150px;
+    border-left: double 5px black;
+
 
     width: 60%;
     gap: 20px;
@@ -198,6 +230,11 @@ button, .navbarLinks a{
 
 .featureCard.reverse{
     flex-direction: row-reverse;
+    margin-left: 0px;
+    margin-right: 150px;
+    border-left: none;
+    border-right:double 5px black ;
+
 }
 
 .featureCardPic{
@@ -208,22 +245,36 @@ button, .navbarLinks a{
 /*Working on quote section*/
 .quoteContainer{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
     flex-direction: column;
+
+    background-color: black;
+
+    padding: 20px;
+    border-left: white solid 20px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 100px;
+
 }
 
 .quote{
-    font-size: 50px;
+    font-size: 32px;
     font-style: italic;
+    font-family: 'Kalam', cursive;
+    color: white;
+
 }
 
 .quoteAuth{
     align-self: flex-end;
-    margin-top: 20px;    
+    margin-top: 20px; 
+    margin-right: 20px;   
 
-    font-size: 30px;
+    font-size: 16px;
+    font-family: 'Proza Libre', sans-serif;
+    color: white;
 
 }
 
@@ -239,7 +290,6 @@ button, .navbarLinks a{
 
 .aboutHead{
     font-size: 32px;
-    -weight: 900;   
 }
 
 .aboutCardCont{
@@ -264,7 +314,6 @@ button, .navbarLinks a{
 }
 
 .aboutJob{
-    -weight: 900;
 }
 
 .aboutText{
@@ -289,6 +338,8 @@ button, .navbarLinks a{
 }
 .ctaText{
     width: 50%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
 }
 
 
@@ -305,7 +356,6 @@ button, .navbarLinks a{
 .techHead{
     margin-top: 20px;
     font-size: 32px;
-    -weight: 900;
 }
 
 .techCard{
@@ -338,13 +388,23 @@ button, .navbarLinks a{
     justify-content: center;
     gap: 20px;
 
+    background-color: black;
+
 }
 
 .footerCopy{
-    -style: italic;
     font-size: 20px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+
+
 }
 
 .footerA{
     margin: 0px 20px;
+    color: white;
+    border-bottom: 2px dotted white;
+    font-family: 'Abel', sans-serif;
+
+
 }
