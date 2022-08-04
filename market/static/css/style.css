@@ -13,9 +13,9 @@
 
 
 /*For debug*/
-/* *{
+*{
     outline: solid greenyellow 2px;
-}         */
+}         
 
 *{
     margin: 0px;
@@ -65,8 +65,19 @@ button, .navbarLinks a{
     border-radius: 50px;
     color: black;
     border: 2px black solid;
+
+    transition: all 0.2s ease-out;
+
 }
 
+#startButton:hover{
+    color: white;
+    border: 2px white solid;
+    background-color: black;
+
+    transition: all 0.2s ease-in;
+
+}
 /*Navbar*/
 .navbar{
     width: 100%;
@@ -120,7 +131,7 @@ button, .navbarLinks a{
     align-items: center;
     justify-content: space-between;
 
-    gap: 10px;
+    gap: 20px;
 }
 
 .navbarLinks a,
@@ -136,17 +147,29 @@ button, .navbarLinks a{
 .navbarLinks #startButton{
     border: 2px white solid;
     border-radius: 10px;
+    transition: all 0.2s ease-out;
+
+    margin-right: 20px;
+
+}
+
+.navbarLinks #startButton:hover{
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    transition: all 0.2s ease-in;
+
 }
 
 .navbarLinks a{
-    border-radius: 5px;
-
+    border-radius: 2px;
+    transition: all 0.2s ease-out;
 }
 
 .navbarLinks a:hover{
     background-color: white;
-    border: 2px solid transparent;
     color: black;
+    transition:all 0.2s ease-in;
 }
 
 .underNav{
