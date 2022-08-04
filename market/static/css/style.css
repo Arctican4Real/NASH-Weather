@@ -1,3 +1,21 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Kalam:wght@300&family=Oswald:wght@200&family=Poppins&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+/*
+    font-family: 'Abel', sans-serif;
+
+    font-family: 'Acme', sans-serif;
+
+    font-family: 'Kalam', cursive;
+
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Mono', monospace;
+*/
 /*Colors*/
 :root{
     --color-1:#a3d3ff;
