@@ -1,11 +1,11 @@
 For logo
     font-family: 'Abel', sans-serif;
 
-For Titles
+For text
     font-family: 'Cormorant Garamond', serif;
 
 For Cursive
     font-family: 'Kalam', cursive;
 
-For text
+For title
     font-family: 'Proza Libre', sans-serif;
