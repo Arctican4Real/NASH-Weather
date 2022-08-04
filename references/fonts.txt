@@ -1,17 +1,11 @@
-/*
+For logo
     font-family: 'Abel', sans-serif;
 
-    font-family: 'Acme', sans-serif;
+For Titles
+    font-family: 'Cormorant Garamond', serif;
 
+For Cursive
     font-family: 'Kalam', cursive;
 
-    font-family: 'Oswald', sans-serif;
-
-    font-family: 'Poppins', sans-serif;
-
-    font-family: 'Prompt', sans-serif;
-
-    font-family: 'Roboto', sans-serif;
-
-    font-family: 'Roboto Mono', monospace;
-*/
+For text
+    font-family: 'Proza Libre', sans-serif;
