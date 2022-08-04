@@ -1,5 +1,5 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Kalam:wght@300&family=Oswald:wght@200&family=Poppins&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Kalam:wght@300&family=Oswald:wght@200&family=Poppins&family=Prompt:wght@700&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
 /*
     font-family: 'Abel', sans-serif;
@@ -12,17 +12,23 @@
 
     font-family: 'Poppins', sans-serif;
 
+    font-family: 'Prompt', sans-serif;
+
     font-family: 'Roboto', sans-serif;
 
     font-family: 'Roboto Mono', monospace;
 */
+
 /*Colors*/
 :root{
     --color-1:#a3d3ff;
     --color-2:#fef9f0;
     --color-3:#ff875e;
     --color-4:#fee53e;
+    --off-white:#fcfcfc;
 }
+
+
 
 /*For debug*/
 /* *{
@@ -76,9 +82,13 @@ button, .navbarLinks a{
     padding: 10px;
     font-size: 15px;
     font-weight: 500;
-    color: white;
-    background-color: gray;
+    font-family: 'Prompt', sans-serif;
     border-radius: 50px;
+
+    background-color: #42a4ff;
+    color: white;
+    border: solid 2px white;
+
 }
 
 /*Navbar*/
@@ -93,7 +103,7 @@ button, .navbarLinks a{
 
     padding: 10px;
 
-    background-color: grey;
+    background-color: var(--color-3);
 }
 
 .navbarLogo{
@@ -102,9 +112,13 @@ button, .navbarLinks a{
     justify-content: center;
     vertical-align: middle;
 
-    font-size: 20px;
-
     gap: 10px;
+}
+
+.logoText{
+    font-size: 36px;
+    font-family: 'Acme', sans-serif;
+    color: var(--off-white);
 }
 
 .logo{
@@ -117,7 +131,9 @@ button, .navbarLinks a{
 .logo img{
     width: 50px;
     height: 50px;
+    padding: 5px;
 }
+
 
 .navbarLinks ul{
     display: flex;
@@ -129,11 +145,15 @@ button, .navbarLinks a{
 
 .navbarLinks a,
 .navbarLinks #startButton{
-    padding: 5px;
+    padding: 5px 10px;
+    font-family: 'Prompt', sans-serif;
 
-    color: white;
+}
 
+.navbarLinks a{
+    color: var(--off-white);
     border-radius: 5px;
+
 }
 
 .underNav{
@@ -147,8 +167,11 @@ button, .navbarLinks a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: var(--color-1); */
     gap: 30px;
+
+    background-color:#ffe225;
+    font-family: 'Roboto Mono', monospace;
+
 }
 
 .heroText{
@@ -163,18 +186,19 @@ button, .navbarLinks a{
     font-size: 42px;
     font-weight: bold;
 
-    color: black;
+    color: white;
 }
 
 .heroTextExtra{
     font-size: 22px;
     line-height: 30px;
     font-style: italic;
+    margin-bottom: 20px;
 }
 
 /*Feature section*/
 .features{
-    /* background: var(--color-2); */
+    background-color: #ffe4b1;
 
     display: flex;
     flex-direction: column;
@@ -188,6 +212,14 @@ button, .navbarLinks a{
 .featureHead{
     font-size: 32px;
     font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.featureCardText{
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .featureCard{
@@ -211,7 +243,7 @@ button, .navbarLinks a{
 
 /*Working on quote section*/
 .quoteContainer{
-    /* background:var(--color-1); */
+    background-color:#ffe225;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -227,6 +259,10 @@ button, .navbarLinks a{
 .quoteAuth{
     align-self: flex-end;
     margin-top: 20px;    
+
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+
 }
 
 /*About section*/
@@ -276,7 +312,8 @@ button, .navbarLinks a{
 
 /*CTA at end*/
 .ctaMain{
-    /* background: var(--color-1); */
+    background-color: #ffe4b1;
+    padding: 30px;
 }
 
 .ctaCont{
@@ -284,10 +321,13 @@ button, .navbarLinks a{
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    background-color: #42a4ff;
+    border-radius: 20px;
+
     /* background-color: var(--color-3); */
 }
 .ctaMain #startButton{
-    padding: 40px;
+    padding: 20px;
 }
 .ctaText{
     width: 50%;
@@ -340,6 +380,8 @@ button, .navbarLinks a{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: var(--color-3);
+
 }
 
 .footerCopy{
