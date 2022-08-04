@@ -7,9 +7,9 @@
 }
 
 /*For debug*/
-/* *{
+*{
     outline: solid greenyellow 2px;
-}        */
+}        
 
 *{
     margin: 0px;
@@ -55,7 +55,7 @@ button, .navbarLinks a{
 
 /*Special Button*/
 #startButton{
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 15px;
     font-weight: 500;
     color: white;
@@ -93,7 +93,12 @@ button, .navbarLinks a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1px;
+    padding: 2px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
 }
 
 .navbarLinks ul{
@@ -104,12 +109,13 @@ button, .navbarLinks a{
     gap: 10px;
 }
 
-.navbarLinks a{
-    padding: 15px;
+.navbarLinks a,
+.navbarLinks #startButton{
+    padding: 5px;
 
     color: white;
 
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .underNav{
