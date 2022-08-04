@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+
+    <div class="loginBox">
+        <form method="POST"  style="color:white">
+            {{ form.csrf_token }}
+
+            <h1 class="">
+                Please Create your Account
+            </h1>
+            <br>
+            {{ form.username.label() }}
+            {{ form.username(class="usernameInput", placeholder="User Name") }}
+
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="usernameInput", placeholder="Email Address") }}
+
+            {{ form.password1.label() }}
+            {{ form.password1(class="usernameInput", placeholder="Password") }}
+
+            {{ form.password2.label() }}
+            {{ form.password2(class="usernameInput", placeholder="Confirm Password") }}
+
+            <br>
+
+    </div>
+{% endblock %}
+
+
+

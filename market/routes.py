@@ -13,4 +13,9 @@ def index():
 
 @app.route('/login')
 def login_Page():
-    return render_template('loginPage.html')
+    return render_template('login.html')
+
+@app.route('/register')
+def Register_Page():
+    return render_template('register.html')
+
