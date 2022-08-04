@@ -9,3 +9,10 @@ class RegisterForm(FlaskForm):
     password = PasswordField(label='Password', validators=[Length(min=6), DataRequired()])
     confirm_pass = PasswordField(label='Confirm Password', validators=[EqualTo('password'), DataRequired()])
     submit = SubmitField(label='Create Your Account')
+
+class Country(FlaskForm):
+    country = StringField(label='Your Country?', validators=[Length(min=2, max=56), DataRequired()])
+
+
+class City(FlaskForm):
+    city =  StringField(label='Your City?', validators=[Length(min=2, max=50), DataRequired()])
