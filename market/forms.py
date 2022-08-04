@@ -11,3 +11,8 @@ class RegisterForm(FlaskForm):
     city =  StringField(label='Your City?', validators=[Length(min=2, max=50), DataRequired()])
     submit = SubmitField(label='Create Your Account')
 
+class LoginForm(FlaskForm):
+    username = StringField(label='User Name:', validators=[DataRequired()])
+    password = PasswordField(label='Password:', validators=[DataRequired()])
+    submit = SubmitField(label='Sign In')
+
