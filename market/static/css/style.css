@@ -9,7 +9,7 @@
 /*For debug*/
 /* *{
     outline: solid greenyellow 2px;
-}       */
+}        */
 
 *{
     margin: 0px;
@@ -267,6 +267,44 @@ button, .navbarLinks a{
 }
 .ctaText{
     width: 50%;
+}
+
+
+/*Tech we used*/
+.techMain{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.techHead{
+    margin-top: 20px;
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.techCard{
+    width: 75vw;
+    height: 40vh;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.techImg{
+    width: 200px;
+    height: 200px;
+}
+
+.techText{
+    font-size: 25px;
+    padding: 2px;
 }
 
 /*Footer*/
