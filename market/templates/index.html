@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sidious | Home</title>
-        <meta name="description" content="PLACEHOLDER TEXT">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        
-        <div class="navbar">
-            <div class="navbarLogo">
-                <div class="logo">&sum;</div>
-                <div class="logoText">Sidious</div>
-            </div>
-            <div class="navbarLinks">
-                
-                <ul>
-                    <li><button id="startButton">Plan Something!</button></li>
+{% extends 'base.html' %}
 
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/about-team.html">About Team</a></li>
-                    <li><a href="">Link 3</a></li>
-                </ul>
-            </div>
-        </div>
-
+{% block title %}
+index
+{% endblock %}
+{% block content %}
         <div class="hero underNav">
             <div class="heroText">
                 <div class="heroTextSlogan">Sir this is a wendy's, would you like your milkshake?</div>
@@ -36,7 +13,7 @@
                 <button id="startButton">Plan Something!</button>
             </div>
             <div class="heroImg">
-                <img src="./placeholder.jpeg" alt="Random placeholder image" height="500px" width="500px">
+                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="Random placeholder image" height="500px" width="500px">
             </div>
         </div>
 
@@ -45,19 +22,19 @@
 
             <div class="featureCard">
                 <div class="featureCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo nihil odio assumenda ex. Laudantium ab illum blanditiis cumque deleniti repellendus voluptates excepturi dolor, eaque alias dolorem consequatur consequuntur recusandae.</div>
-                <img src="./placeholder.jpeg" alt="" class="featureCardPic">
+                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
             </div>
             <div class="featureCard reverse">
                 <div class="featureCardText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatum ipsa mollitia quasi maxime cum tenetur, soluta, nulla sapiente laborum facilis adipisci, dolor eaque corrupti? Iste quia soluta nisi fugit!</div>
-                <img src="./placeholder.jpeg" alt="" class="featureCardPic">
+                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
             </div>
             <div class="featureCard">
                 <div class="featureCardText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum rem accusantium ipsa voluptates distinctio atque consequuntur ut, aspernatur odit cupiditate aliquid dolor doloremque? Velit magnam labore ipsa laboriosam repudiandae sequi.</div>
-                <img src="./placeholder.jpeg" alt="" class="featureCardPic">
+                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
             </div>
             <div class="featureCard reverse">
                 <div class="featureCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem non quidem ab ducimus, ullam eius sapiente delectus illum nesciunt laborum repellendus, harum rerum et dolore quaerat minima animi architecto?</div>
-                <img src="./placeholder.jpeg" alt="" class="featureCardPic">
+                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
             </div>
         </div>
 
@@ -87,5 +64,4 @@
             </div>
         </div>
         <script src="./script.js" async defer></script>
-    </body>
-</html>
+{% endblock %}
