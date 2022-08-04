@@ -6,7 +6,7 @@ from market import routes
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '%f43A9Uo4'
-app.config['MYSQL_DB'] = 'User'
+app.config['MYSQL_DB'] = 'weather_db'
 app.config['SECRET_KEY'] = 'GDtfDCFYryy'
 
 mysql = MySQL(app)
