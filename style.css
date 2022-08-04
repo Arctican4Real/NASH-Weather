@@ -1,6 +1,6 @@
 /*Colors*/
 :root{
-    --color-1:#3ab4ff;
+    --color-1:#a3d3ff;
     --color-2:#FFEEDB;
     --color-3:#ffb92c;
     --color-4:#ff1f40;
@@ -75,7 +75,7 @@ button, .navbarLinks a{
 
     padding: 10px;
 
-    background-color: grey;
+    background-color: #a3d3ff;
 }
 
 .navbarLogo{
