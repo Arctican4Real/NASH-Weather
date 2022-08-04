@@ -143,6 +143,12 @@ button, .navbarLinks a{
 
 }
 
+.navbarLinks a:hover{
+    background-color: white;
+    border: 2px solid transparent;
+    color: black;
+}
+
 .underNav{
     padding-top: 80px !important;
 }
@@ -220,7 +226,7 @@ button, .navbarLinks a{
     justify-content: space-around;
 
     margin-left: 150px;
-    border-left: double 5px black;
+    border-left: solid 3px black;
 
 
     width: 60%;
@@ -240,6 +246,7 @@ button, .navbarLinks a{
 .featureCardPic{
     width: 200px;
     height: 200px;
+    border-radius: 30px;
 }
 
 /*Working on quote section*/
@@ -253,9 +260,15 @@ button, .navbarLinks a{
     background-color: black;
 
     padding: 20px;
+
     border-left: white solid 20px;
     border-bottom-left-radius: 200px;
     border-top-left-radius: 100px;
+
+    border-right: white solid 20px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 100px;
+
 
 }
 
@@ -290,13 +303,15 @@ button, .navbarLinks a{
 
 .aboutHead{
     font-size: 32px;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .aboutCardCont{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .aboutCard{
@@ -309,15 +324,26 @@ button, .navbarLinks a{
 }
 
 .aboutImg{
+    box-sizing: content-box;
     height: 200px;
     width: 200px;
+
+    border:5px solid black;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 
 .aboutJob{
+    font-family: 'Abel', sans-serif;
+    font-weight: 900;
 }
 
 .aboutText{
     padding: 5px;
+    text-align: justify;
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 /*CTA at end*/
@@ -356,6 +382,8 @@ button, .navbarLinks a{
 .techHead{
     margin-top: 20px;
     font-size: 32px;
+    text-decoration: underline;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .techCard{
@@ -363,15 +391,21 @@ button, .navbarLinks a{
     height: 40vh;
 
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     gap: 20px;
     padding: 20px;
+
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 .techImg{
     width: 200px;
     height: 200px;
+    box-shadow: -16px 18px 26px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -16px 18px 26px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -16px 18px 26px -6px rgba(0,0,0,0.75);
 }
 
 .techText{
