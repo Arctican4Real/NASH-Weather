@@ -13,9 +13,9 @@
 
 
 /*For debug*/
-*{
+/* *{
     outline: solid greenyellow 2px;
-}         
+}          */
 
 *{
     margin: 0px;
@@ -351,7 +351,6 @@ button, .navbarLinks a{
     height: 200px;
     width: 200px;
 
-    border:5px solid black;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
 
