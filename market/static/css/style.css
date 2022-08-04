@@ -62,7 +62,7 @@ button, .navbarLinks a{
 #startButton{
     padding: 10px;
     font-size: 15px;
-    font-weight: 500;
+    -weight: 500;
     border-radius: 50px;
 }
 
@@ -152,14 +152,14 @@ button, .navbarLinks a{
 
 .heroTextSlogan{
     font-size: 42px;
-    font-weight: bold;
+    -weight: bold;
 
 }
 
 .heroTextExtra{
     font-size: 22px;
     line-height: 30px;
-    font-style: italic;
+    -style: italic;
     margin-bottom: 20px;
 }
 
@@ -177,12 +177,12 @@ button, .navbarLinks a{
 
 .featureHead{
     font-size: 32px;
-    font-weight: 900;
+    -weight: 900;
 
 }
 
 .featureCardText{
-    font-weight: bold;
+    -weight: bold;
     font-size: 25px;
 }
 
@@ -239,7 +239,7 @@ button, .navbarLinks a{
 
 .aboutHead{
     font-size: 32px;
-    font-weight: 900;   
+    -weight: 900;   
 }
 
 .aboutCardCont{
@@ -264,7 +264,7 @@ button, .navbarLinks a{
 }
 
 .aboutJob{
-    font-weight: 900;
+    -weight: 900;
 }
 
 .aboutText{
@@ -305,7 +305,7 @@ button, .navbarLinks a{
 .techHead{
     margin-top: 20px;
     font-size: 32px;
-    font-weight: 900;
+    -weight: 900;
 }
 
 .techCard{
@@ -341,7 +341,7 @@ button, .navbarLinks a{
 }
 
 .footerCopy{
-    font-style: italic;
+    -style: italic;
     font-size: 20px;
 }
 
