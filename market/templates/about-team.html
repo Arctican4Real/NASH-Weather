@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sidious | About Team</title>
-        <meta name="description" content="PLACEHOLDER TEXT">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./../style.css">
-    </head>
-    <body>
-        
-        <div class="navbar">
-            <div class="navbarLogo">
-                <div class="logo">&sum;</div>
-                <div class="logoText">Sidious</div>
-            </div>
-            <div class="navbarLinks">
-                
-                <ul>
-                    <li><button id="startButton">Plan Something!</button></li>
+{% extends 'base.html' %}
 
-                    <li><a href="./../index.html">Home</a></li>
-                    <li><a href="./about-team.html">About Team</a></li>
-                    <li><a href="">Link 3</a></li>
-                </ul>
-            </div>
-        </div>
+{% block title %}
+about team
+{% endblock %}
 
+{% block content %}
         <div class="about underNav">
             <div class="aboutHead">About Our Team</div>
             <div class="aboutCardCont">
@@ -67,5 +45,5 @@
             </div>
         </div>
         <script src="./script.js" async defer></script>
-    </body>
-</html>
+
+{% endblock %}
