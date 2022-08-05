@@ -20,33 +20,32 @@ def about_team():
 def index():
     return render_template('index.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-
     # Output message if something goes wrong...
-
     msg = ''
     if request.method == 'GET' and 'username' in request.form and 'password' in request.form:
         # Create variables for easy access
-        username = request.form['username']
-        password = request.form['password']
+        username1 = request.form['username']
+        password1= request.form['password']
 
     # Check if account exists using MySQL
-    cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-    cursor.execute('SELECT * FROM user WHERE username = %s AND password = %s', (username, password))
-    # Fetch one record and return result
-    account = cursor.fetchone()
-    # If account exists in accounts table in out database
-    if account:
-        # Create session data, we can access this data in other routes
-        session['loggedin'] = True
-        session['id'] = account['id']
-        session['username'] = account['username']
-        # Redirect to home page
-        return 'Logged in successfully!'
-    else:
-        # Account doesnt exist or username/password incorrect
-        msg = 'Incorrect username/password!'
+        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        cursor.execute('SELECT * FROM user WHERE username = %s AND password = %s', (username1, password1,))
+        # Fetch one record and return result
+        account = cursor.fetchone()
+        # If account exists in accounts table in out database
+        if account:
+            # Create session data, we can access this data in other routes
+            session['loggedin'] = True
+            session['id'] = account['id']
+            session['username'] = account['username']
+            # Redirect to home page
+            print("logged in ")
+            msg = 'Logged in successfully!'
+        else:
+            # Account doesnt exist or username/password incorrect
+            msg = 'Incorrect username/password!'
     return render_template('login.html', msg=msg)
 
 
