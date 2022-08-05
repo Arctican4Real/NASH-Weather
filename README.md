@@ -1,5 +1,5 @@
-# NASH Weahter
-A repo for the 2022 WCC hackathon project by team m-3 "The Senate"
+# NASH Weather
+A Repo for the 2022 WCC hackathon project by team m-3 "The Senate"
 
 ABOUT
 =====
@@ -7,13 +7,13 @@ ABOUT
 
 	Wouldn't it be nice to avoid all the fuss? Plan a trip somewhere, with the confidence that the weather will be perfect for all your activities. How many more trips would you go on if you could plan better for the weather? If only it was that easy...
 
-	Well, now it can be! Introducing NASH Weahter, an all-in-one weather-based planner for all your outdoor activities! Choose an activity, and NASH Weahter will look a week into the future to find the ideal day for you! It finds many suitable destinations and simultaneously maps out all their forecasts. Then it will suggest the location and day with the best weather. That way you may "BEAT THE HEAT" and stay cool while enjoying all the benefits of summer
+	Well, now it can be! Introducing NASH Weather, an all-in-one weather-based planner for all your outdoor activities! Choose an activity, and NASH Weather will look a week into the future to find the ideal day for you! It finds many suitable destinations and simultaneously maps out all their forecasts. Then it will suggest the location and day with the best weather. That way you may "BEAT THE HEAT" and stay cool while enjoying all the benefits of summer
 
-	What if the coming week isn't suitable for your activity? Perhaps the weather is too hot or frigid to fully enjoy your activity. NASH Weahter will suggest other activities you may do indoors! It will also SORT THEM BY POWER/ENERGY CONSUMPTION "BEATING THE HEAT" in a different way by saving energy and reducing global warming! 
+	What if the coming week isn't suitable for your activity? Perhaps the weather is too hot or frigid to fully enjoy your activity. NASH Weather will suggest other activities you may do indoors! It will also SORT THEM BY POWER/ENERGY CONSUMPTION "BEATING THE HEAT" in a different way by saving energy and reducing global warming! 
 
-	NASH Weahter uses the Google Maps and Open Weather APIs to find the locations that pertain to your activities as well as and weather. This ensures that the information is accurate and up-to-date
+	NASH Weather uses the Google Maps and Open Weather APIs to find the locations that pertain to your activities as well as and weather. This ensures that the information is accurate and up-to-date
 
-	NASH Weahter is easy to use, has a beautiful UI, and saves you time! Give NASH Weahter a try now!
+	NASH Weather is easy to use, has a beautiful UI, and saves you time! Give NASH Weather a try now!
 
 TEAM MEMBERS
 ====
@@ -22,4 +22,3 @@ Adeeb Rahman - Front End | Hreem Pandya - Back End | Neil Shrivastava - Back End
 TECHNOLOGIES USED
 ====
 HTML,CSS, JS - Front End | Flask, Python - Back End | MySQL - Database
-
