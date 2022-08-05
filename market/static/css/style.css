@@ -291,12 +291,18 @@ button, .navbarLinks a{
     padding: 20px;
     flex-direction: column;
 
+    background-color: black;
+
     padding: 20px;
 
-    background-image: url(./../images/blob.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1500px;
+    border-left: white solid 20px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 100px;
+
+    border-right: white solid 20px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 100px;
+
 
 }
 
@@ -306,10 +312,6 @@ button, .navbarLinks a{
     font-family: 'Kalam', cursive;
     color: white;
 
-}
-
-.quoteBlob{
-    z-index:-1 ;
 }
 
 .quoteAuth{
