@@ -1,79 +1,95 @@
-* {
-  	box-sizing: border-box;
-  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
-  	font-size: 16px;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+body{
+  background-color:#a3d3ff;
+  background-size:cover;
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
 }
-body {
-  	background-color: #435165;
-  	margin: 0;
+
+.registerBox{
+  width:520px;
+  height:520px;
+  background:#ff875e;
+  color:#fff;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  box-sizing:border-box;
+  padding: 70px 30px;
+  padding-top:5px;
+  padding-bottom:20px;
 }
-.login, .register {
-  	width: 400px;
-  	background-color: #ffffff;
-  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-  	margin: 100px auto;
+
+.countryInput::placeholder{
+  color:white;
 }
-.login h1, .register h1 {
-  	text-align: center;
-  	color: #5b6574;
-  	font-size: 24px;
-  	padding: 20px 0 20px 0;
-  	border-bottom: 1px solid #dee0e4;
+
+.cityInput::placeholder{
+  color:white;
 }
-.login .links, .register .links {
-  	display: flex;
-  	padding: 0 15px;
+
+.registerBox p{
+  margin:0;
+  padding:0;
+  font-weight:bold;
 }
-.login .links a, .register .links a {
-  	color: #adb2ba;
-  	text-decoration: none;
-  	display: inline-flex;
-  	padding: 0 10px 10px 10px;
-  	font-weight: bold;
+
+.registerBox input{
+  width:100%;
+  margin-bottom:20px;
 }
-.login .links a:hover, .register .links a:hover {
-  	color: #9da3ac;
+
+.registerBox input[type="text"], input[type="password"]
+{
+  border:none;
+  border-bottom:1px solid #fff;
+  background:transparent;
+  outline:none;
+  height:40px;
+  color:#fff;
+  font-size:16px;
+  margin-bottom:25px;
 }
-.login .links a.active, .register .links a.active {
-  	border-bottom: 3px solid #3274d6;
-  	color: #3274d6;
+
+.registerTitle{
+  font-size:25px;
+  line-height:75px;
 }
-.login form, .register form {
-  	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: center;
-  	padding-top: 20px;
+
+.countryTitle, .cityTitle, .activitiesTitle{
+  font-size:19px;
 }
-.login form label, .register form label {
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	width: 50px;
-  	height: 50px;
-  	background-color: #3274d6;
-  	color: #ffffff;
+
+.confirmButton{
+  font-family:sans-serif;
+  font-weight:bold;
+  color:white;
+  font-size:14px;
+  background-color:#ffc107;
+  margin-top:15px;
+  padding-top:11px;
+  padding-bottom:11px;
+  padding-right:15px;
+  padding-left:15px;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  transition:background-color, 0.15s;
 }
-.login form input[type="password"], .login form input[type="text"], .login form input[type="email"], .register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
-  	width: 310px;
-  	height: 50px;
-  	border: 1px solid #dee0e4;
-  	margin-bottom: 20px;
-  	padding: 0 15px;
+
+.confirmButton:hover{
+  background-color:rgb(239,180,0);
 }
-.login form input[type="submit"], .register form input[type="submit"] {
-  	width: 100%;
-  	padding: 15px;
-  	margin-top: 20px;
-  	background-color: #3274d6;
-  	border: 0;
-  	cursor: pointer;
-  	font-weight: bold;
-  	color: #ffffff;
-  	transition: background-color 0.2s;
+
+.confirmButton:active{
+  background-color:rgb(248, 205, 78);
 }
-.login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
-  	background-color: #2868c7;
-  	transition: background-color 0.2s;
+
+.passwordInput::placeholder{
+  color:white;
+}
+
+.usernameInput::placeholder{
+  color:white;
 }
