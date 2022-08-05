@@ -78,7 +78,7 @@ def register():
             msg = 'Please fill out the form!'
         else:
             # Account doesnt exists and the form data is valid, now insert new account into accounts table
-            cursor.execute("INSERT INTO user (username,city,email_address,country,password) VALUES (%s, %s, %s, %s, %s)", (username, city, email_address, country, password,))
+            cursor.execute("INSERT INTO user (username,city,email_address,country,password) VALUES (%s, %s, %s, %s, %s)", (username, city, email_address, country,password ,))
             mysql.connection.commit()
             msg = 'You have successfully registered!'
 
@@ -97,7 +97,10 @@ def register():
 
 @app.route('/logout')
 def logout():
-
-
-
-
+    session.pop('loggedin', None)
+    session.pop('id', None)
+    session.pop('username', None)
+    session.pop('country', None)
+    session.pop('city', None)
+    # Redirect to login page
+    return redirect(url_for('index'))

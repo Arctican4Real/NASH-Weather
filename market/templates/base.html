@@ -19,12 +19,13 @@
          <div class="navbar">
             <div class="navbarLogo">
                 <div class="logo"><img src="{{ url_for('static', filename='images/weather_icon3.png') }}" alt="Logo of the Website"></div>
-                <div class="logoText">Sidious</div>
+                <div class="logoText">NASH Weather</div>
             </div>
             <div class="navbarLinks">
                 <ul>
                     <li><a href ="{{ url_for('register') }}" id="startButton">Register</a></li>
                     <li><a href ="{{ url_for('login') }}" id="startButton">Login</a></li>
+                    <li><a href ="logout" id="startButton">Log Out</a></li>
 
 
                     <li><a href="{{ url_for('index') }}">Home</a></li>
