@@ -13,9 +13,9 @@
 
 
 /*For debug*/
-*{
+/* *{
     outline: solid greenyellow 2px;
-}          
+}           */
 
 *{
     margin: 0px;
@@ -80,12 +80,12 @@ button, .navbarLinks a{
 }
 
 /*Pattern Backdrop*/
-#pattern{
+.pattern{
     background-image: url("./../images/pattern.png");
     background-color: white;
 }
 
-.about #pattern{
+.about .pattern{
     background-size: cover;
 }
 /*Navbar*/
@@ -333,7 +333,7 @@ button, .navbarLinks a{
 }
 
 .aboutHead{
-    font-size: 32px;
+    font-size: 45px;
     font-family: 'Proza Libre', sans-serif;
 }
 
@@ -430,7 +430,7 @@ button, .navbarLinks a{
 
 .techHead{
     margin-top: 32px;
-    font-size: 32px;
+    font-size: 45px;
     font-family: 'Proza Libre', sans-serif;
 }
 
