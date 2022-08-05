@@ -1,15 +1,21 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond&family=Kalam:wght@300&family=Proza+Libre&display=swap');
+
 /*Colors*/
 :root{
-    --color-1:#3ab4ff;
-    --color-2:#FFEEDB;
-    --color-3:#ffb92c;
-    --color-4:#ff1f40;
+    --color-1:#a3d3ff;
+    --color-2:#fef9f0;
+    --color-3:#ff875e;
+    --color-4:#fee53e;
+    --off-white:#fcfcfc;
 }
+
+
 
 /*For debug*/
 /* *{
     outline: solid greenyellow 2px;
-}       */
+}           */
 
 *{
     margin: 0px;
@@ -49,33 +55,55 @@ body, html{
 button, .navbarLinks a{
     padding: 0px;
     margin: 0px;
-    /* background-color: transparent; */
     cursor: pointer;
 }
 
 /*Special Button*/
 #startButton{
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 15px;
-    font-weight: 500;
-    color: white;
-    background-color: gray;
     border-radius: 50px;
+    color: black;
+    border: 2px black solid;
+
+    transition: all 0.3s ease-out;
+
 }
 
+#startButton:hover{
+    color: white;
+    border: 2px white solid;
+    border-radius: 20px;
+    background-color: black;
+
+    transition: all 0.3s ease-in;
+
+}
+
+/*Pattern Backdrop*/
+.pattern{
+    background-image: url("./../images/pattern.png");
+    background-color: white;
+}
+
+.about .pattern{
+    background-size: cover;
+}
 /*Navbar*/
 .navbar{
     width: 100%;
     position: fixed;
+    z-index: 999;
 
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    height: 50px;
+    height: 70px;
 
     padding: 10px;
 
-    background-color: grey;
+    background-color:#47a0f4 ;
+
 }
 
 .navbarLogo{
@@ -84,36 +112,85 @@ button, .navbarLinks a{
     justify-content: center;
     vertical-align: middle;
 
-    font-size: 20px;
-
     gap: 10px;
+}
+
+.logoText{
+    font-size: 36px;
+    color: white;
+    font-family: 'Abel', sans-serif;
 }
 
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1px;
+    padding: 2px;
 }
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    transition: 0.5s all ease-out;
+}
+
+.logo img:hover{
+    transform: rotate(720deg);
+    margin-bottom: 5px;
+    transition: 0.5s all ease-in;
+}
+
 
 .navbarLinks ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    gap: 10px;
+    gap: 20px;
 }
 
 .navbarLinks a{
-    padding: 15px;
-
+    padding: 5px 10px;
     color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+}
 
-    border-radius: 20px;
+.navbarLinks #startButton{
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+
+    border: 2px #fee53e solid;
+    border-radius: 50px;
+
+    transition: all 0.3s ease-out;
+
+    padding: 5px 30px;
+}
+
+.navbarLinks #startButton:hover{
+    border-radius: 5px;
+    color: black;
+    background-color: #fee53e;
+    transition: all 0.3s ease-in;
+
+}
+
+.navbarLinks a{
+    border-radius: 2px;
+    transition: all 0.2s ease-out;
+}
+
+.navbarLinks a:hover{
+    background-color: white;
+    color: black;
+    transition:all 0.2s ease-in;
 }
 
 .underNav{
-    padding-top: 60px !important;
+    padding-top: 80px !important;
 }
 
 /*Hero*/
@@ -123,9 +200,11 @@ button, .navbarLinks a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: var(--color-1); */
     gap: 30px;
+
+    background-color: #fef9f0;
 }
+
 
 .heroText{
     display: flex;
@@ -137,39 +216,74 @@ button, .navbarLinks a{
 
 .heroTextSlogan{
     font-size: 42px;
-    font-weight: bold;
+    text-align: left;
+    font-family: 'Proza Libre', sans-serif;
 
-    color: white;
 }
 
 .heroTextExtra{
     font-size: 22px;
     line-height: 30px;
-    font-style: italic;
+    text-align: justify;
+    font-family: 'Cormorant Garamond', serif;
+    padding-bottom: 20px;
+
+}
+
+.hero #startButton{
+    padding: 20px;
+    color: black;
+    border-color: black;
+    background-color: #ff875e;
+
+}
+
+.hero #startButton:hover{
+    padding: 20px;
+    color: white;
+    background-color: #ff875e;
+    border-color:black;
 }
 
 /*Feature section*/
 .features{
-    /* background: var(--color-2); */
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 
     padding: 20px;
+    /* background-size: cover; */
 }
 
 .featureHead{
-    font-size: 32px;
-    font-weight: 900;
+    font-size: 45px;
+    font-family: 'Proza Libre', sans-serif;
+    text-align: left;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.featureCardText{
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    padding: 30px;
+    text-align: justify;
 }
 
 .featureCard{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    margin-left: 50px;
+    background-color:#fef9f0;
+    border: 5px dotted #ff875e;
+    border-radius: 20px;
+    padding: 20px;
 
     width: 60%;
     gap: 20px;
@@ -178,31 +292,58 @@ button, .navbarLinks a{
 
 .featureCard.reverse{
     flex-direction: row-reverse;
+    margin-left: 0px;
+    margin-right: 50px;
+
 }
 
 .featureCardPic{
     width: 200px;
     height: 200px;
+    border-radius: 30px;
+    padding: 10px;
+
 }
 
 /*Working on quote section*/
 .quoteContainer{
-    /* background:var(--color-1); */
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
     flex-direction: column;
+
+    background-color: #a3d3ff;
+
+    padding: 20px;
+
+    border-left: white solid 20px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 100px;
+
+    border-right: white solid 20px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 100px;
+
+
 }
 
 .quote{
-    font-size: 50px;
+    font-size: 48px;
     font-style: italic;
+    font-family: 'Kalam', cursive;
+    color: black;
+
 }
 
 .quoteAuth{
-    align-self: flex-end;
-    margin-top: 20px;    
+    margin-top: 20px; 
+    margin-right: 20px;   
+
+    font-size: 16px;
+    font-family: 'Proza Libre', sans-serif;
+    color: black;
+
 }
 
 /*About section*/
@@ -213,46 +354,68 @@ button, .navbarLinks a{
     padding: 30px;
     align-items: center;
     justify-content: center;
-    /* background:var(--color-2); */
 }
 
 .aboutHead{
-    font-size: 32px;
-    font-weight: 900;   
+    font-size: 45px;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .aboutCardCont{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .aboutCard{
+    box-sizing: content-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 20%;
     gap: 10px;
+    background-color: #fef9f0;
+    border-radius: 20px;
+    border:#fee53e solid 2px;
+    padding: 10px 20px;
 }
 
 .aboutImg{
+    box-sizing: content-box;
     height: 200px;
     width: 200px;
+
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 
-.aboutJob{
+.aboutJobBack{
+    font-family: 'Abel', sans-serif;
     font-weight: 900;
+    color: #ff632f;
+}
+
+.aboutJobFront{
+    font-family: 'Abel', sans-serif;
+    font-weight: 900;
+    color: #2a97fd;
 }
 
 .aboutText{
-    padding: 5px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 /*CTA at end*/
 .ctaMain{
-    /* background: var(--color-1); */
+    padding: 30px;
 }
 
 .ctaCont{
@@ -260,32 +423,131 @@ button, .navbarLinks a{
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    /* background-color: var(--color-3); */
+    border-radius: 20px;
+
+    background-color: #a3d3ff;
+
 }
 .ctaMain #startButton{
-    padding: 40px;
+    padding: 20px;
+    color: black;
+    border-color: black;
+    background-color: #ff875e;
+
+}
+
+.ctaMain #startButton:hover{
+    padding: 20px;
+    color: white;
+    background-color: #ff875e;
+    border-color:black;
 }
 .ctaText{
     width: 50%;
+    font-family: 'Abel', sans-serif;
+    font-size: 32px;
+    color: black;
+
 }
 
+
+/*Tech we used*/
+.techMain{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.techHead{
+    margin-top: 32px;
+    font-size: 45px;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+.techCard{
+    width: 75vw;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 20px;
+    background-color: #ffecc8;
+
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.techCont{
+    padding: 20px;
+    background-color: #ffecc8;
+    border-radius: 20px;   
+}
+
+.techImg{
+    width: 200px;
+    height: 200px;
+    box-shadow:         0px 10px 5px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 5px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 10px 5px 3px rgba(0,0,0,0.75);
+
+    transition: all .5s ease-out;
+}
+
+.techImg:hover{
+    margin-bottom: 20px;
+    transition: all .5s ease-in;
+
+    box-shadow:         0px 20px 30px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 20px 30px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 20px 30px 3px rgba(0,0,0,0.75);
+}
+
+.techText{
+    font-size: 32px;
+    padding: 2px;
+}
+
+.techLink{
+    color: blue;
+    font-family: 'Abel', sans-serif;
+    transition: all .2s ease-out;
+}
+
+.techLink:hover{
+    color: white;
+    color: rgb(0, 0, 90);
+    transition: all .2s ease-in;
+}
 /*Footer*/
 .footer{
-    /* background-color: var(--color-1); */
     display: flex;
     padding: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    background-color: #fee53e;
+
 }
 
 .footerCopy{
-    font-style: italic;
     font-size: 20px;
+    color: black;
+    font-family: 'Abel', sans-serif;
+
+
 }
 
 .footerA{
     margin: 0px 20px;
-    color: blue;
+    color: black;
+    border-bottom: 5px dotted #ff875e;
+    font-family: 'Abel', sans-serif;
+
+
 }
