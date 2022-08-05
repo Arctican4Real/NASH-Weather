@@ -5,6 +5,27 @@ Register Page
 
 {% block content %}
 
+<div class="registerBox">
+      <p class="registerTitle">Register</p>
+      <p class="countryTitle">Country</p>
+	<form action="{{ url_for('register') }}" method="post" autocomplete="off">
+		  <input class="countryInput" type="text" name="country" placeholder="Enter Country">
+		  <p class="cityTitle">City</p>
+		  <input class="cityInput" type="text" name="city" placeholder="Enter City">
+		  <p>Username</p>
+		  <input class="usernameInput" type="text" name="username" placeholder="Enter Username">
+		  <p>Password</p>
+		  <input class="passwordInput" type="password" name="password" placeholder="Enter Password">
+		  <p>email</p>
+		  <input class="usernameInput" type="text" name="email" placeholder="Enter Email">
+		  <button class="confirmButton">
+			Confirm
+		  </button>
+
+	</form>
+
+    </div>
+
 <div class="register">
 			<h1>Register</h1>
 			<div class="links">

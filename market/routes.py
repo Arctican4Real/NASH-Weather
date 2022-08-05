@@ -12,12 +12,14 @@ app.config['SECRET_KEY'] = '422434344re5ttrhttyyty'
 mysql = MySQL(app)
 @app.route('/')
 @app.route('/index')
+def index():
+    return render_template('index.html')
+
+@app.route('/about-team')
 def about_team():
     return render_template('about-team.html')
 
-@app.route('/index')
-def index():
-    return render_template('index.html')
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -59,6 +61,8 @@ def register():
         username = request.form['username']
         password = request.form['password']
         email_address = request.form['email']
+        city = request.form['city']
+        country = request.form['country']
 
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
         cursor.execute('SELECT * FROM user WHERE username = %s', (username,))
@@ -74,7 +78,7 @@ def register():
             msg = 'Please fill out the form!'
         else:
             # Account doesnt exists and the form data is valid, now insert new account into accounts table
-            cursor.execute("INSERT INTO user (username,city,email_address,country,password) VALUES (%s, %s, %s, %s, %s)", (username, 'Washington', email_address, 'USA', password,))
+            cursor.execute("INSERT INTO user (username,city,email_address,country,password) VALUES (%s, %s, %s, %s, %s)", (username, city, email_address, country, password,))
             mysql.connection.commit()
             msg = 'You have successfully registered!'
 

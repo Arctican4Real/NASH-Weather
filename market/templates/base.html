@@ -23,15 +23,15 @@
             </div>
             <div class="navbarLinks">
                 <ul>
-                    <li><a href ="./pages/login.html" id="startButton">Register</a></li>
-                    <li><a href ="./pages/login.html" id="startButton">Login</a></li>
+                    <li><a href ="{{ url_for('register') }}" id="startButton">Register</a></li>
+                    <li><a href ="{{ url_for('login') }}" id="startButton">Login</a></li>
 
 
-                    <li><a href="#hero">Home</a></li>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
                     <li><a href="#feat">Features</a></li>
                     <li><a href="#tech">Technologies</a></li>
 
-                    <li><a href="./pages/about-team.html">About Team</a></li>
+                    <li><a href="{{ url_for('about_team') }}">About Team</a></li>
 
 
                 </ul>
