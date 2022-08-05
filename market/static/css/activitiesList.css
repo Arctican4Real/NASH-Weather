@@ -1,0 +1,60 @@
+body{
+  background-color:#ACD1AF;
+  background-size:cover;
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.loginBox{
+  width:340px;
+  height:690px;
+  background:#9AB8F7;
+  color:#fff;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  box-sizing:border-box;
+  padding: 70px 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  line-height:28px;
+  box-shadow: 1px 2px 8px #5a88ed;
+}
+
+.activitiesTitle{
+  font-weight:bold;
+  padding-left:80px;
+  padding-right:80px;
+  font-size:25px;
+  margin-bottom:0px;
+
+}
+
+.activitiesList{
+  margin-top:20px;
+  padding-left:100px;
+  padding-right:100px;
+  font-size:20px;
+}
+
+.soccerPic{
+  height:150px;
+  width:250px;
+  border:none;
+  border-radius:50px;
+  margin-top:100px;
+  margin-left:180px;
+  transform:rotate(340deg);
+}
+
+.golfPic{
+  height:150px;
+  width:250px;
+  border:none;
+  border-radius:50px;
+  margin-top:100px;
+  margin-left:570px;
+  transform:rotate(20deg);
+}
