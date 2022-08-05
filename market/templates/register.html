@@ -5,37 +5,31 @@ Register Page
 
 {% block content %}
 
-    <div class="loginBox">
-        <form method="POST"  style="color:white">
-            {{ form.csrf_token }}
-
-            <h1 class="">
-                Please Create your Account
-            </h1>
-            <br>
-            {{ form.username.label() }}
-            {{ form.username(class="usernameInput", placeholder="User Name") }}
-
-            {{ form.email_address.label() }}
-            {{ form.email_address(class="usernameInput", placeholder="Email Address") }}
-
-            {{ form.password.label() }}
-            {{ form.password(class="usernameInput", placeholder="Password") }}
-
-            {{ form.confirm_pass.label() }}
-            {{ form.confirm_pass(class="usernameInput", placeholder="Confirm Password") }}
-
-            {{ form.country.label() }}
-            {{ form.country(class="usernameInput", placeholder="Your country") }}
-
-            {{ form.city.label() }}
-            {{ form.city(class="usernameInput", placeholder="Your city") }}
+<div class="register">
+			<h1>Register</h1>
+			<div class="links">
+				<a href="{{ url_for('login') }}">Login</a>
+				<a href="{{ url_for('register') }}" class="active">Register</a>
+			</div>
+			<form action="{{ url_for('register') }}" method="post" autocomplete="off">
 
 
-            <br>
-
-    </div>
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<label for="email">
+					<i class="fas fa-envelope"></i>
+				</label>
+				<input type="email" name="email" placeholder="Email" id="email" required>
+				<div class="msg">{{ msg }}</div>
+				<input type="submit" value="Register">
+			</form>
+		</div>
 {% endblock %}
-
 
 

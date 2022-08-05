@@ -8,11 +8,12 @@
     <div class="loginBox">
      <img src="{{ url_for('static', filename='images/weather_icon3.jpg') }}" class="avatar">
      <h1>Login</h1>
-     <form>
+     <form action="{{ url_for('login') }}" method="post">
         <p>Username</p>
-        <input class="usernameInput" type="text" name="" placeholder="Enter Username">
+        <input class="usernameInput" type="text" name="username" placeholder="Enter Username">
         <p>Password</p>
-        <input class="passwordInput" type="password" name="" placeholder="Enter Password">
+        <input class="passwordInput" type="password" name="password" placeholder="Enter Password">
+         <div class="msg">{{ msg }}</div>
         <input type="submit" name="" value="Login">
         <a href="#">Don't have an account?</a>
      </form>
