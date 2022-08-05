@@ -195,11 +195,6 @@ button, .navbarLinks a{
 
 }
 
-.heroImg img{
-    /* box-shadow: 15px 17px 23px -7px rgba(0,0,0,0.81);
-    -webkit-box-shadow: 15px 17px 23px -7px rgba(0,0,0,0.81);
-    -moz-box-shadow: 15px 17px 23px -7px rgba(0,0,0,0.81); */
-}
 
 .heroText{
     display: flex;
