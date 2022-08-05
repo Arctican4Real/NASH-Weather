@@ -10,25 +10,30 @@
         </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
-        <meta name="description" content="PLACEHOLDER TEXT">
+        <meta name="description" content="An all-in-one weather-based planner for all your outdoor activities!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     </head>
     <body>
 
-        <div class="navbar">
+         <div class="navbar">
             <div class="navbarLogo">
-                <div class="logo">&sum;</div>
+                <div class="logo"><img src="{{ url_for('static', filename='images/weather_icon3.png') }}" alt="Logo of the Website"></div>
                 <div class="logoText">Sidious</div>
             </div>
             <div class="navbarLinks">
-
                 <ul>
-                    <li><button id="startButton">Plan Something!</button></li>
+                    <li><a href ="./pages/login.html" id="startButton">Register</a></li>
+                    <li><a href ="./pages/login.html" id="startButton">Login</a></li>
 
-                    <li><a href="./../index.html">Home</a></li>
-                    <li><a href="./about-team.html">About Team</a></li>
-                    <li><a href="">Link 3</a></li>
+
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#feat">Features</a></li>
+                    <li><a href="#tech">Technologies</a></li>
+
+                    <li><a href="./pages/about-team.html">About Team</a></li>
+
+
                 </ul>
             </div>
         </div>

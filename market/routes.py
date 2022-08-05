@@ -10,9 +10,8 @@ app.config['MYSQL_DB'] = 'weather_db'
 app.config['SECRET_KEY'] = '422434344re5ttrhttyyty'
 
 mysql = MySQL(app)
-
 @app.route('/')
-@app.route('/about-team')
+@app.route('/index')
 def about_team():
     return render_template('about-team.html')
 

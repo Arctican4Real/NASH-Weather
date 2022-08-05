@@ -3,65 +3,91 @@
 {% block title %}
 index
 {% endblock %}
+
 {% block content %}
-        <div class="hero underNav">
+<div class="hero underNav" id="hero">
             <div class="heroText">
-                <div class="heroTextSlogan">Sir this is a wendy's, would you like your milkshake?</div>
+                <div class="heroTextSlogan">Planning for the weather has never been easier!</div>
                 <div class="heroTextExtra">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, nostrum dicta? Quo ipsum sed aliquid debitis nostrum voluptate? Error eaque qui natus nisi atque ullam quidem esse est accusantium praesentium!
+                    Wouldn't it be nice to avoid all the fuss and plan a trip somewhere, with the confidence that the weather will be perfect for all your activities. How many more trips would you go on if you could plan better for the weather? If only it was that easy...
+                    <br><br>
+                    Well, now it can be! Introducing SIDIOUS, an all-in-one weather-based planner for all your outdoor activities!
                 </div>
-                <button id="startButton">Plan Something!</button>
+                <li><a href ="{{ url_for('login') }}" id="startButton">Plan Something!</a></li>
             </div>
             <div class="heroImg">
-                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="Random placeholder image" height="500px" width="500px">
+                <img src="{{ url_for('static', filename='images/weather_icon3.png') }}" alt="3D version of logo" height="500px" width="500px">
             </div>
         </div>
 
-        <div class="features">
+        <div class="features pattern underNav" id="feat">
             <div class="featureHead">What can it do?</div>
 
             <div class="featureCard">
-                <div class="featureCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo nihil odio assumenda ex. Laudantium ab illum blanditiis cumque deleniti repellendus voluptates excepturi dolor, eaque alias dolorem consequatur consequuntur recusandae.</div>
-                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
+                <div class="featureCardText">
+                    Choose an activity, and SIDIOUS will look a week into the future to find the ideal day for you!
+                </div>
+                <img src="{{ url_for('static', filename='images/icons/telescope.png') }}" alt="Icon of a telescope" class="featureCardPic">
             </div>
             <div class="featureCard reverse">
-                <div class="featureCardText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatum ipsa mollitia quasi maxime cum tenetur, soluta, nulla sapiente laborum facilis adipisci, dolor eaque corrupti? Iste quia soluta nisi fugit!</div>
-                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
+                <div class="featureCardText">
+                    It finds many suitable destinations and simultaneously maps out all their forecasts. Then it will suggest the location and day with the best weather. That way you may "BEAT THE HEAT" and stay cool while enjoying all the benefits of summer.
+                </div>
+                <img src="{{ url_for('static', filename='images/icons/map.png') }}" alt="" class="featureCardPic">
             </div>
             <div class="featureCard">
-                <div class="featureCardText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum rem accusantium ipsa voluptates distinctio atque consequuntur ut, aspernatur odit cupiditate aliquid dolor doloremque? Velit magnam labore ipsa laboriosam repudiandae sequi.</div>
-                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
+                <div class="featureCardText">
+                    What if the coming week isn't suitable for your activity? SIDIOUS will suggest other activities you may do indoors! It will also sort them by power consumption allowing you to "BEAT THE HEAT" in a different way by saving energy and reducing global warming!
+                </div>
+                <img src="{{ url_for('static', filename='images/icons/energy-saving.png') }}" alt="" class="featureCardPic">
             </div>
             <div class="featureCard reverse">
-                <div class="featureCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem non quidem ab ducimus, ullam eius sapiente delectus illum nesciunt laborum repellendus, harum rerum et dolore quaerat minima animi architecto?</div>
-                <img src="{{ url_for('static', filename='images/placeholder.jpeg') }}" alt="" class="featureCardPic">
+                <div class="featureCardText">
+                    SIDIOUS uses the Google Maps and Open Weather APIs to find the locations that pertain to your activities as well as and weather. This ensures that the information is accurate and up-to-date                </div>
+                <img src="{{ url_for('static', filename='images/icons/shield.png') }}" alt="" class="featureCardPic">
             </div>
         </div>
 
         <div class="quoteContainer">
-            <div class="quote">"The only limit to our realization of tomorrow will be our doubts of today."</div>
-            <div class="quoteAuth">- Franklin D. Roosevelt</div>
+            <div class="quote">“A goal without a plan is just a wish.”</div>
+            <div class="quoteAuth">― Antoine de Saint-Exupéry</div>
         </div>
+
+            <div class="techMain pattern" id="tech">
+                <div class="techHead">Technologies We Used</div>
+                <div class="techCont">
+                    <div class="techCard">
+                        <img src="{{ url_for('static', filename='images/tech/HCJ.png') }}" alt="Picture of HTML, CSS, and Javascript logos" class="techImg">
+                        <div class="techText">The front end was made with HTML and vanilla CSS, as well as some Javascript.</div>
+                    </div>
+                    <div class="techCard">
+                        <img src="{{ url_for('static', filename='images/tech/PyF.png') }}" alt="Picture of Flask and Python logo" class="techImg">
+                        <div class="techText">Python and Flask was used for backend functions, and manipulating the HTML.</div>
+                    </div>
+                    <div class="techCard">
+                        <img src="{{ url_for('static', filename='images/tech/SQL.png') }}" alt="Picture of SQL logo" class="techImg">
+                        <div class="techText">The user registry database was handled using SQL.</div>
+                    </div>
+                    <div class="techCard">
+                        <img src="{{ url_for('static', filename='images/tech/GO.png') }}" alt="" class="techImg">
+                        <div class="techText">The <a href="https://developers.google.com/maps/apis-by-platform" class="techLink">Google maps API</a> handles location data. The <a href="https://openweathermap.org/api" class="techLink">OpenWeather API</a> provides weather information.</div>
+                    </div>
+                </div>
+            </div>
 
             <div class="ctaMain">
                 <div class="ctaCont">
-                    <div class="ctaText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iusto, recusandae eius quo voluptates aperiam quam ratione maiores pariatur explicabo est esse repellendus quae voluptate? Odio, enim. Ipsam, iure impedit?</div>
-                    <div id="startButton">Plan Something!</div>
+                    <div class="ctaText">SIDIOUS is easy to use, has a beautiful UI, and saves you time! Give SIDIOUS a try now!</div>
+                    <li><a href ="./pages/login.html" id="startButton">Plan Something!</a></li>
                 </div>
             </div>
 
         <div class="footer">
-            <div class="footerCopy">&copy; The Senate 2022</div>
+            <div class="footerCopy">Made by The Senate 2022</div>
             <div class="footerLinks">
-                <a href="" class="footerA">These</a>
-                <a href="" class="footerA">Are</a>
-                <a href="" class="footerA">Just</a>
-                <a href="" class="footerA">Some</a>
-                <a href="" class="footerA">Random</a>
-                <a href="" class="footerA">Links</a>
-                <a href="" class="footerA">To</a>
-                <a href="" class="footerA">Click</a>
+                <a href="https://github.com/Arctican4Real/code-name-sidious" class="footerA">Github Repo</a>
             </div>
         </div>
         <script src="./script.js" async defer></script>
+
 {% endblock %}
