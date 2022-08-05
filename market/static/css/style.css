@@ -143,30 +143,31 @@ button, .navbarLinks a{
     gap: 20px;
 }
 
-.navbarLinks a,
-.navbarLinks #startButton{
+.navbarLinks a{
     padding: 5px 10px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 12px;
+}
+
+.navbarLinks #startButton{
     color: white;
     font-family: 'Abel', sans-serif;
     font-size: 18px;
 
-
-}
-
-.navbarLinks #startButton{
     border: 2px white solid;
-    border-radius: 10px;
-    transition: all 0.2s ease-out;
+    border-radius: 50px;
 
-    margin-right: 20px;
+    transition: all 0.3s ease-out;
 
+    padding: 5px 30px;
 }
 
 .navbarLinks #startButton:hover{
-    border-radius: 10px;
+    border-radius: 5px;
     color: black;
     background-color: white;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
 
 }
 
@@ -240,6 +241,7 @@ button, .navbarLinks a{
     font-family: 'Proza Libre', sans-serif;
     text-align: left;
     background-color: white;
+    margin-bottom: 20px;
 }
 
 .featureCardText{
@@ -425,7 +427,7 @@ button, .navbarLinks a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 20px;
 }
 
 .techHead{
