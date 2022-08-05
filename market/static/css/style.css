@@ -426,7 +426,6 @@ button, .navbarLinks a{
     border-radius: 20px;
 
     background-color: #a3d3ff;
-
 }
 .ctaMain #startButton{
     padding: 20px;
@@ -445,7 +444,7 @@ button, .navbarLinks a{
 .ctaText{
     width: 50%;
     font-family: 'Abel', sans-serif;
-    font-size: 32px;
+    font-size: 22px;
     color: black;
 
 }
