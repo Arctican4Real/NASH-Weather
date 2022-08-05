@@ -95,7 +95,8 @@ def register():
 #cursor.execute("INSERT INTO user (user_id,username,city,email_address,country,password) VALUES ( %s, %s, %s, %s)",(username, 'Tokyo', email_address,'Japan',password))
 # cursor.execute('SELECT * FROM user WHERE username = %s', (username,))
 
-
+@app.route('/logout')
+def logout():
 
 
 
