@@ -118,8 +118,6 @@ button, .navbarLinks a{
     font-size: 36px;
     color: white;
     font-family: 'Abel', sans-serif;
-
-
 }
 
 .logo{
@@ -307,7 +305,7 @@ button, .navbarLinks a{
 }
 
 .quote{
-    font-size: 32px;
+    font-size: 48px;
     font-style: italic;
     font-family: 'Kalam', cursive;
     color: white;
@@ -315,7 +313,6 @@ button, .navbarLinks a{
 }
 
 .quoteAuth{
-    align-self: flex-end;
     margin-top: 20px; 
     margin-right: 20px;   
 
@@ -403,9 +400,16 @@ button, .navbarLinks a{
     border-color: white;
 
 }
+
+.ctaMain #startButton:hover{
+    padding: 20px;
+    color: black;
+    background-color: white;
+    border-color: black;
+}
 .ctaText{
     width: 50%;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Abel', sans-serif;
     font-size: 32px;
     color: white;
 
