@@ -1,0 +1,95 @@
+body{
+  background-color:#a3d3ff;
+  background-size:cover;
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.registerBox{
+  width:520px;
+  height:520px;
+  background:#ff875e;
+  color:#fff;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  box-sizing:border-box;
+  padding: 70px 30px;
+  padding-top:5px;
+  padding-bottom:20px;
+}
+
+.countryInput::placeholder{
+  color:white;
+}
+
+.cityInput::placeholder{
+  color:white;
+}
+
+.registerBox p{
+  margin:0;
+  padding:0;
+  font-weight:bold;
+}
+
+.registerBox input{
+  width:100%;
+  margin-bottom:20px;
+}
+
+.registerBox input[type="text"], input[type="password"]
+{
+  border:none;
+  border-bottom:1px solid #fff;
+  background:transparent;
+  outline:none;
+  height:40px;
+  color:#fff;
+  font-size:16px;
+  margin-bottom:25px;
+}
+
+.registerTitle{
+  font-size:25px;
+  line-height:75px;
+}
+
+.countryTitle, .cityTitle, .activitiesTitle{
+  font-size:19px;
+}
+
+.confirmButton{
+  font-family:sans-serif;
+  font-weight:bold;
+  color:white;
+  font-size:14px;
+  background-color:#ffc107;
+  margin-top:15px;
+  padding-top:11px;
+  padding-bottom:11px;
+  padding-right:15px;
+  padding-left:15px;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  transition:background-color, 0.15s;
+}
+
+.confirmButton:hover{
+  background-color:rgb(239,180,0); 
+}
+
+.confirmButton:active{
+  background-color:rgb(248, 205, 78); 
+}
+
+.passwordInput::placeholder{
+  color:white;
+}
+
+.usernameInput::placeholder{
+  color:white;
+}
