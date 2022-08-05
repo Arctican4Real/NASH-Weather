@@ -84,6 +84,10 @@ button, .navbarLinks a{
     background-image: url("./../images/pattern.png");
     background-color: white;
 }
+
+.about #pattern{
+    background-size: cover;
+}
 /*Navbar*/
 .navbar{
     width: 100%;
@@ -216,6 +220,7 @@ button, .navbarLinks a{
     line-height: 30px;
     text-align: justify;
     font-family: 'Cormorant Garamond', serif;
+    padding-bottom: 20px;
 
 }
 
