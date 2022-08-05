@@ -238,18 +238,18 @@ button, .navbarLinks a{
 }
 
 .featureHead{
-    font-size: 32px;
+    font-size: 45px;
     font-family: 'Proza Libre', sans-serif;
     text-align: left;
-    text-decoration: underline;
     background-color: white;
 }
 
 .featureCardText{
     font-size: 25px;
     font-family: 'Cormorant Garamond', serif;
-    background-color: white;
-
+    color: black;
+    padding: 30px;
+    text-align: justify;
 }
 
 .featureCard{
@@ -257,9 +257,11 @@ button, .navbarLinks a{
     align-items: center;
     justify-content: space-around;
 
-    margin-left: 150px;
-    border-left: solid 3px black;
-
+    margin-left: 50px;
+    background-color: white;
+    border: 5px dotted black;
+    border-radius: 20px;
+    padding: 20px;
 
     width: 60%;
     gap: 20px;
@@ -269,9 +271,7 @@ button, .navbarLinks a{
 .featureCard.reverse{
     flex-direction: row-reverse;
     margin-left: 0px;
-    margin-right: 150px;
-    border-left: none;
-    border-right:double 5px black ;
+    margin-right: 50px;
 
 }
 
@@ -279,6 +279,8 @@ button, .navbarLinks a{
     width: 200px;
     height: 200px;
     border-radius: 30px;
+    padding: 10px;
+
 }
 
 /*Working on quote section*/
@@ -289,18 +291,12 @@ button, .navbarLinks a{
     padding: 20px;
     flex-direction: column;
 
-    background-color: black;
-
     padding: 20px;
 
-    border-left: white solid 20px;
-    border-bottom-left-radius: 200px;
-    border-top-left-radius: 100px;
-
-    border-right: white solid 20px;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 100px;
-
+    background-image: url(./../images/blob.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1500px;
 
 }
 
@@ -310,6 +306,10 @@ button, .navbarLinks a{
     font-family: 'Kalam', cursive;
     color: white;
 
+}
+
+.quoteBlob{
+    z-index:-1 ;
 }
 
 .quoteAuth{
@@ -373,8 +373,9 @@ button, .navbarLinks a{
 }
 
 .aboutText{
-    padding: 5px;
+    padding: 10px;
     text-align: justify;
+    font-size: 20px;
     font-family: 'Cormorant Garamond', serif;
 
 }
@@ -391,14 +392,21 @@ button, .navbarLinks a{
     padding: 20px;
     border-radius: 20px;
 
+    background-color: black;
+
 }
 .ctaMain #startButton{
     padding: 20px;
+    color: white;
+    border-color: white;
+
 }
 .ctaText{
     width: 50%;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 21px;
+    font-size: 32px;
+    color: white;
+
 }
 
 
@@ -413,9 +421,8 @@ button, .navbarLinks a{
 }
 
 .techHead{
-    margin-top: 20px;
+    margin-top: 32px;
     font-size: 32px;
-    text-decoration: underline;
     font-family: 'Proza Libre', sans-serif;
 }
 
