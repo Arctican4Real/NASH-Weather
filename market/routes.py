@@ -24,7 +24,7 @@ def index():
 def login():
     # Output message if something goes wrong...
     msg = ''
-    if request.method == 'GET' and 'username' in request.form and 'password' in request.form:
+    if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
         # Create variables for easy access
         username1 = request.form['username']
         password1= request.form['password']
@@ -38,7 +38,7 @@ def login():
         if account:
             # Create session data, we can access this data in other routes
             session['loggedin'] = True
-            session['id'] = account['id']
+            session['user_id'] = account['user_id']
             session['username'] = account['username']
             # Redirect to home page
             print("logged in ")
