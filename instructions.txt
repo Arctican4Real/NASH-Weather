@@ -1,0 +1,5 @@
+How to use this app
+===================
+1.Open "index.html" file in a browser.
+2.Press the "Register" button in the Nav. bar.
+[TO BE CONTINUED]
