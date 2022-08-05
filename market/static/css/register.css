@@ -8,7 +8,7 @@ body{
 
 .registerBox{
   width:520px;
-  height:520px;
+  height:600px;
   background:#ff875e;
   color:#fff;
   top:50%;
@@ -91,5 +91,9 @@ body{
 }
 
 .usernameInput::placeholder{
+  color:white;
+}
+
+.emailInput::placeholder{
   color:white;
 }
