@@ -160,14 +160,14 @@ button, .navbarLinks a{
 .navbarLinks #startButton{
     color: white;
     font-family: 'Abel', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
 
     border: 2px #fee53e solid;
     border-radius: 50px;
 
     transition: all 0.3s ease-out;
 
-    padding: 5px 30px;
+    padding: 2px 20px;
 }
 
 .navbarLinks #startButton:hover{
