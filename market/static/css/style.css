@@ -154,15 +154,15 @@ button, .navbarLinks a{
     padding: 5px 10px;
     color: white;
     font-family: 'Abel', sans-serif;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .navbarLinks #startButton{
     color: white;
     font-family: 'Abel', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
 
-    border: 2px white solid;
+    border: 2px #fee53e solid;
     border-radius: 50px;
 
     transition: all 0.3s ease-out;
@@ -173,7 +173,7 @@ button, .navbarLinks a{
 .navbarLinks #startButton:hover{
     border-radius: 5px;
     color: black;
-    background-color: white;
+    background-color: #fee53e;
     transition: all 0.3s ease-in;
 
 }
@@ -377,9 +377,10 @@ button, .navbarLinks a{
     justify-content: flex-start;
     width: 20%;
     gap: 10px;
-    background-color: white;
+    background-color: #fef9f0;
     border-radius: 20px;
-    padding: 5px 20px;
+    border:#fee53e solid 2px;
+    padding: 10px 20px;
 }
 
 .aboutImg{
@@ -392,9 +393,16 @@ button, .navbarLinks a{
 
 }
 
-.aboutJob{
+.aboutJobBack{
     font-family: 'Abel', sans-serif;
     font-weight: 900;
+    color: #ff632f;
+}
+
+.aboutJobFront{
+    font-family: 'Abel', sans-serif;
+    font-weight: 900;
+    color: #2a97fd;
 }
 
 .aboutText{
@@ -499,7 +507,7 @@ button, .navbarLinks a{
 }
 
 .techText{
-    font-size: 22px;
+    font-size: 32px;
     padding: 2px;
 }
 
