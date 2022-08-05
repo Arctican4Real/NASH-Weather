@@ -425,7 +425,7 @@ button, .navbarLinks a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 }
 
 .techHead{
@@ -441,8 +441,9 @@ button, .navbarLinks a{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
+    background-color: white;
 
     font-family: 'Cormorant Garamond', serif;
 
