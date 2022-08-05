@@ -160,14 +160,14 @@ button, .navbarLinks a{
 .navbarLinks #startButton{
     color: white;
     font-family: 'Abel', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
 
     border: 2px #fee53e solid;
     border-radius: 50px;
 
     transition: all 0.3s ease-out;
 
-    padding: 5px 30px;
+    padding: 2px 20px;
 }
 
 .navbarLinks #startButton:hover{
@@ -202,7 +202,7 @@ button, .navbarLinks a{
     justify-content: space-between;
     gap: 30px;
 
-    background-color: #fef9f0;
+    background-color: #ffe9c2;
 }
 
 
@@ -426,7 +426,6 @@ button, .navbarLinks a{
     border-radius: 20px;
 
     background-color: #a3d3ff;
-
 }
 .ctaMain #startButton{
     padding: 20px;
@@ -445,7 +444,7 @@ button, .navbarLinks a{
 .ctaText{
     width: 50%;
     font-family: 'Abel', sans-serif;
-    font-size: 32px;
+    font-size: 22px;
     color: black;
 
 }
@@ -549,5 +548,12 @@ button, .navbarLinks a{
     border-bottom: 5px dotted #ff875e;
     font-family: 'Abel', sans-serif;
 
+    font-size: 16px;
+    transition: 0.2s all ease-in;
+}
 
+.footerA:hover{
+    font-size: 22px;
+    border-bottom: 5px solid #ff875e;
+    transition: all 0.2s ease-in;
 }
