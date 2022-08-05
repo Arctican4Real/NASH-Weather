@@ -102,7 +102,7 @@ button, .navbarLinks a{
 
     padding: 10px;
 
-    background-color: black;
+    background-color:#47a0f4 ;
 
 }
 
@@ -202,7 +202,7 @@ button, .navbarLinks a{
     justify-content: space-between;
     gap: 30px;
 
-
+    background-color: #fef9f0;
 }
 
 
@@ -228,6 +228,21 @@ button, .navbarLinks a{
     font-family: 'Cormorant Garamond', serif;
     padding-bottom: 20px;
 
+}
+
+.hero #startButton{
+    padding: 20px;
+    color: black;
+    border-color: black;
+    background-color: #ff875e;
+
+}
+
+.hero #startButton:hover{
+    padding: 20px;
+    color: white;
+    background-color: #ff875e;
+    border-color:black;
 }
 
 /*Feature section*/
@@ -265,8 +280,8 @@ button, .navbarLinks a{
     justify-content: space-around;
 
     margin-left: 50px;
-    background-color: white;
-    border: 5px dotted black;
+    background-color:#fef9f0;
+    border: 5px dotted #ff875e;
     border-radius: 20px;
     padding: 20px;
 
@@ -298,7 +313,7 @@ button, .navbarLinks a{
     padding: 20px;
     flex-direction: column;
 
-    background-color: black;
+    background-color: #a3d3ff;
 
     padding: 20px;
 
@@ -317,7 +332,7 @@ button, .navbarLinks a{
     font-size: 48px;
     font-style: italic;
     font-family: 'Kalam', cursive;
-    color: white;
+    color: black;
 
 }
 
@@ -327,7 +342,7 @@ button, .navbarLinks a{
 
     font-size: 16px;
     font-family: 'Proza Libre', sans-serif;
-    color: white;
+    color: black;
 
 }
 
@@ -402,27 +417,28 @@ button, .navbarLinks a{
     padding: 20px;
     border-radius: 20px;
 
-    background-color: black;
+    background-color: #a3d3ff;
 
 }
 .ctaMain #startButton{
     padding: 20px;
-    color: white;
-    border-color: white;
+    color: black;
+    border-color: black;
+    background-color: #ff875e;
 
 }
 
 .ctaMain #startButton:hover{
     padding: 20px;
-    color: black;
-    background-color: white;
-    border-color: black;
+    color: white;
+    background-color: #ff875e;
+    border-color:black;
 }
 .ctaText{
     width: 50%;
     font-family: 'Abel', sans-serif;
     font-size: 32px;
-    color: white;
+    color: black;
 
 }
 
@@ -452,10 +468,15 @@ button, .navbarLinks a{
     justify-content: flex-start;
     gap: 30px;
     padding: 20px;
-    background-color: white;
+    background-color: #ffecc8;
 
     font-family: 'Cormorant Garamond', serif;
+}
 
+.techCont{
+    padding: 20px;
+    background-color: #ffecc8;
+    border-radius: 20px;   
 }
 
 .techImg{
@@ -502,13 +523,13 @@ button, .navbarLinks a{
     justify-content: center;
     gap: 20px;
 
-    background-color: black;
+    background-color: #fee53e;
 
 }
 
 .footerCopy{
     font-size: 20px;
-    color: white;
+    color: black;
     font-family: 'Abel', sans-serif;
 
 
@@ -516,8 +537,8 @@ button, .navbarLinks a{
 
 .footerA{
     margin: 0px 20px;
-    color: white;
-    border-bottom: 2px dotted white;
+    color: black;
+    border-bottom: 5px dotted #ff875e;
     font-family: 'Abel', sans-serif;
 
 
