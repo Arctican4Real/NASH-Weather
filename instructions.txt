@@ -1,0 +1,29 @@
+step 1: git clone repository run:
+
+git clone https://github.com/Arctican4Real/NASH-Weather.git
+
+
+step 2: switch branches:
+
+git switch banckenddbug
+
+step 3:open this directory with an IDE
+
+step 4: pip installation:
+
+pip install -r installation2.txt
+
+
+step 5(VERY IMPORTANT): open routes.py and for the value of app.config['MYSQL_PASSWORD'] add your mysql password
+The app wont work without this mysql db
+
+
+
+step 6: run run.py
+
+step 7: register
+
+step 8: login with username and password
+
+
+
