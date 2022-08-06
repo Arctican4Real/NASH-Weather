@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+Plan
+{% endblock %}
+{% block content %}
+    <div class="inputCont">
+
+            <div class="inputTitle">Input Page</div>
+
+            <div class="containerInput">
+                <div class="actInput">
+                    <form action="{{ url_for('in_out') }}" method="post" autocomplete="off">
+                        <input type="text" id="inputField" name="activities"placeholder="Input from available activities">
+                        <a id="actBut" href="activities">See Activities</a>
+                        <input type="submit" class="confirmButton" value="enter">
+                    </form>
+
+
+                     <div class="actButCont">
+
+                    </div>
+                </div>
+            </div>
+
+                <div id="output">
+                    <div class="placeName">{{user_places}}</div>
+                    <div class="temp">{{day_answer}}</div>
+                    <div class="timeDate"> {{date_answer}}</div>
+                </div>
+                <button id="backBut">Back to Homepage</button>
+            </div>
+    </div>
+{% endblock %}

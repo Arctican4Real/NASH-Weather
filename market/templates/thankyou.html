@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NASH Weather | Thank You</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/thankyou.css') }}">
+  </head>
+  <body>
+    <div class="thankyouBox">
+      <p class="thankyouMessage"><span class="thankyou">Thank You</span> for using NASH Weather!</p>
+      <img class="logoImg" src="{{ url_for('static', filename='images/weather_icon3.jpg')}}">
+      <a href="{{ url_for('index')}}" target="_parent"class="goBackButton"><button>go back</button></a>
+     </div>
+  </body>
+</html>
